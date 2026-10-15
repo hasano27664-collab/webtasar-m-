@@ -7,37 +7,37 @@ bu cevabı nasıl kullandınız
 Site fikrini kendim buldum 
 Ai ye sordugum sorular
 
-# 🤖 AI Çalışma Günlüğü (AI Log)
+# AI Calisma Gunlugu (AI Log)
 
-Bu dosyada, Web Tasarımı dersi boyunca yapay zeka (AI) ile gerçekleştirilen etkileşimler, sorulan sorular, AI tarafından verilen yanıtlar ve bu yanıtların projede nasıl kullanıldığı tarih sırasıyla kayıt altına alınmaktadır.
-
----
-
-## 📅 16 Ekim 2026 - Proje Kurulumu ve Dokümantasyon
-
-### 📌 1. Soru: Ödev Dosyalarının Oluşturulması
-
-#### Kullanıcı Sorduğu Soru:
-> "Şimdi bunlar ödevim yapalım hadi / Nasıl yapcam dostum adım adım"
-
-#### AI'nın Verdiği Cevap:
-> GitHub üzerindeki 3 temel görevi (`readmi`, `ai log md yi oluştur`, `projenin protipini hazırla`) analiz etti. Projenin ana dokümantasyonu (`README.md`), yapay zeka günlük dosyası (`ai_log.md`) ve ana sayfa prototipinin (`index.html`) GitHub arayüzünden adım adım nasıl oluşturulacağını açıkladı. Dosyalar eklendikten sonra GitHub `Issues` başlıklarının nasıl kapatılacağını gösterdi.
-
-#### Bu Cevabı Nasıl Kullandınız?
-- GitHub web arayüzü üzerinden `README.md` ve `ai_log.md` dosyaları oluşturuldu.
-- Sürüm kontrol sistemi ve proje yönetiminde GitHub `Issues` takip sistemi öğrenildi.
+Bu dosyada, Web Tasarimi dersi boyunca yapay zeka ile yaptigim gorusmeleri, sordugum sorulari ve projede nasil kullandigimi yaziyorum.
 
 ---
 
-### 📌 2. Soru: Proje Konusu ve README İçeriği
+## 16 Ekim 2026 - Proje Kurulumu ve Dokumantasyon
 
-#### Kullanıcı Sorduğu Soru:
-> "Proje berber randevu alma sitesi olacak, Visual Studio Code'dan mı çalışalım, ikimiz yürüteceğiz. İlk README'ye yazacaklarımızı ayarlayalım."
+### 1. Adim: Odev Dosyalarinin Olusturulmasi
 
-#### AI'nın Verdiği Cevap:
-> Proje fikri olarak "Berber Randevu Alma Sistemi" konusunu onayladı. Kod geliştirme ortamı olarak Visual Studio Code ve versiyon takibi için Git kullanılması gerektiğini belirtti. Ardından berber randevu sisteminin amacını, temel işlevlerini (hizmet seçimi, tarih/saat seçimi, responsive koyu tema arayüzü), kullanılan teknolojileri ve dosya hiyerarşisini içeren profesyonel bir `README.md` içeriği sundu.
+#### Sordugum Soru:
+> "Simdi bunlar odevim yapalim hadi / Nasil yapcam dostum adim adim"
 
-#### Bu Cevabı Nasıl Kullandınız?
-- Proje konusu "Berber Randevu Alma Sistemi" olarak kararlaştırıldı.
-- Hazırlanan detaylı `README.md` içeriği depoya aktarılarak proje dokümantasyonu tamamlandı.
-- Geliştirme ortamı olarak Visual Studio Code kullanımına karar verildi.
+#### AI'nin Verdigi Cevap:
+> GitHub üzerindeki gorevleri inceleyip README.md ve ai_log.md dosyalarini nasil olusturacagimi adim adim anlatti. Isler bitince GitHub Issues kısmından gorevleri nasil kapatacagimi gosterdi.
+
+#### Bu Cevabi Nasil Kullandim?
+- README.md ve ai_log.md dosyalarini olusturdum.
+- GitHub Issues sistemini kullanmayi ogrendim.
+
+---
+
+### 2. Adim: Proje Konusu ve README Hazirligi
+
+#### Sordugum Soru:
+> "Proje berber randevu alma sitesi olacak, Visual Studio Code'dan mi calisalim, ikimiz yurucegiz. Ilk README'ye yazacaklarimizi ayarlayalim."
+
+#### AI'nin Verdigi Cevap:
+> Berber Randevu Alma Sistemi konusunu onayladi. Visual Studio Code ve Git kullanmami tavsiye etti. Projenin amacini, ozelliklerini ve dosya yapisini iceren sade bir README metni hazirladi.
+
+#### Bu Cevabi Nasil Kullandim?
+- Proje konusunu Berber Randevu Alma Sistemi olarak belirledim.
+- Hazirlanan metni README dosyama ekledim.
+- Kodlama ortamı olarak Visual Studio Code kullanmaya karar verdim.
