@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berber Randevu Sistemi - Prototip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            line-height: 1.5;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💈 Berber Randevu Sistemi</h1>
+    <p>Lütfen randevu almak istediğiniz bilgileri doldurun.</p>
+    <hr>
+
+    <form>
+        <!-- 1. Hizmet Seçimi -->
+        <div class="form-group">
+            <label for="hizmet">Hizmet Seçiniz:</label>
+            <select id="hizmet">
+                <option value="">-- Hizmet Seçin --</option>
+                <option value="sac">Saç Kesimi (250 TL)</option>
+                <option value="sakal">Sakal Tıraşı (150 TL)</option>
+                <option value="paket">Saç + Sakal (350 TL)</option>
+            </select>
+        </div>
+
+        <!-- 2. Berber Seçimi -->
+        <div class="form-group">
+            <label for="berber">Berber Seçiniz:</label>
+            <select id="berber">
+                <option value="">-- Berber Seçin --</option>
+                <option value="ahmet">Ahmet Usta</option>
+                <option value="mehmet">Mehmet Usta</option>
+            </select>
+        </div>
+
+        <!-- 3. Tarih Seçimi -->
+        <div class="form-group">
+            <label for="tarih">Randevu Tarihi:</label>
+            <input type="date" id="tarih">
+        </div>
+
+        <!-- 4. Saat Seçimi -->
+        <div class="form-group">
+            <label for="saat">Randevu Saati:</label>
+            <select id="saat">
+                <option value="">-- Saat Seçin --</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+            </select>
+        </div>
+
+        <!-- 5. Müşteri Bilgileri -->
+        <div class="form-group">
+            <label for="adsoyad">Adınız Soyadınız:</label>
+            <input type="text" id="adsoyad" placeholder="Örn: Hasan Yılmaz">
+        </div>
+
+        <div class="form-group">
+            <label for="telefon">Telefon Numarası:</label>
+            <input type="tel" id="telefon" placeholder="05XX XXX XX XX">
+        </div>
+
+        <button type="button">Randevuyu Onayla</button>
+    </form>
+
+</body>
+</html>
