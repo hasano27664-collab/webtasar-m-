@@ -89,3 +89,19 @@ Hangi Yolu Seçmelisin?
 Şu an için: Berber randou sistemi gibi tek sayfalık, hızlıca test etmek istediğin projelerde tek dosya (inline) şeklinde bırakabilirsin. Uğraşması çok pratiktir.
 
 İleride (Portfolyona ekleyeceksen veya geliştireceksen): Kesinlikle ayrı dosyalara (style.css ve script.js) bölmeni tavsiye ederim. HTML içine de şu şekilde bağlayabilirsin:
+SORU
+itenin arayüzünde randevu alma alanının yerini değiştirmek için öncelikle kullandığın teknolojiye (saf HTML/CSS, bir CSS framework'ü, React/Vue gibi bir kütüphane veya hazır bir CMS/tema) bakmak gerekir. Ancak genel hatlarıyla bu düzenlemeyi en temiz ve mantıklı şekilde nasıl yapabileceğini adım adım planlayabiliriz:
+
+1. Mevcut Konumu ve Hedef Yeri Belirleme
+Şu anki yer: Randevu butonu veya formu şu an nerede? (Örn: Header'ın sağında, ana sayfanın ortasında, footer'a yakın bir yerde mi?)
+
+Nereye taşımak istiyorsun? Kullanıcıların siteye girdiğinde ilk bakacağı ve en kolay erişebileceği yerler genellikle header (üst menü), sayfanın kahraman alanı (hero section - ilk ekranda görünen büyük alan) veya sabit bir CTA (Call to Action) butonu şeklindedir.
+
+2. HTML ve CSS Yapısını Güncelleme
+Eğer projede HTML/CSS kullanıyorsan, taşıma işlemini yaparken şu adımları izleyebilirsin:
+
+Elementi Kes ve Yapıştır (DOM Taşıması): Randevu alanını temsil eden HTML etiketini (<div class="appointment-section"> veya <a href="..." class="btn-randevu">) mevcut yerinden kesip (Ctrl+X) yerleştirmek istediğin yeni kapsayıcının içine yapıştır (Ctrl+V).
+
+Flexbox veya Grid Düzenini Kontrol Et: Elementi yeni yerine koyduktan sonra sayfa bozulabilir. Özellikle display: flex; veya display: grid; kullanılan alanlarda order özelliğini kullanabilir ya da HTML sırasını değiştirerek hizalamayı sağlayabilirsin.
+
+Örnek bir CSS Flexbox düzenlemesi:
