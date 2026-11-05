@@ -41,3 +41,51 @@ Bu dosyada, Web Tasarimi dersi boyunca yapay zeka ile yaptigim gorusmeleri, sord
 - Proje konusunu Berber Randevu Alma Sistemi olarak belirledim.
 - Hazirlanan metni README dosyama ekledim.
 - Kodlama ortamı olarak Visual Studio Code kullanmaya karar verdim.
+
+- Soru
+- sence css ve javascripti html dosyasınamı yazayım ayrı ayrımı yazayım
+- Cevap
+- Kısa ve net cevap: Küçük projeler ve tek sayfalık (single-page) uygulamalar için tek dosyada yazmak pratiktir; ancak proje büyüdükçe veya profesyonel bir iş yapacaksan kesinlikle ayrı dosyalar (harici CSS ve JS) kullanmalısın.
+
+Yazılımcı gözüyle her iki yöntemin artılarını ve eksiklerini şöyle özetleyebiliriz:
+
+1. Tek Dosya İçinde Yazmak (<style> ve <script> etiketleriyle)
+Şu an yaptığımız gibi her şeyi tek bir index.html içine toplamak:
+
+Artıları:
+
+Kolay taşınabilirlik: Dosyayı arkadaşına göndermek, flash belleğe atmak veya başka bir bilgisayara taşımak çok kolaydır (tek bir dosyadır).
+
+Hızlı başlangıç: Dosya yollarını (path) ayarlamakla uğraşmazsın, doğrudan çift tıklayıp tarayıcılarda çalıştırabilirsin.
+
+Eksileri:
+
+Kod kalabalığı: Proje büyüyüp satırlar 500-1000'i geçince aradığın kodu bulmak tam bir işkenceye dönüşür.
+
+Performans: Tarayıcı dosyayı her okuduğunda hepsini baştan işler.
+
+2. Ayrı Dosyalarda Yazmak (Harici .css ve .js)
+Projeyi şu şekilde bölmek:
+
+index.html (Sadece HTML iskeleti)
+
+style.css (Sadece tasarım ve renkler)
+
+script.js (Sadece mantık ve JavaScript kodları)
+
+Artıları:
+
+Düzen ve Temizlik: HTML iskeletine odaklanırken kafan karışmaz. Tasarım değiştireceğin zaman sadece CSS dosyasına gidersin.
+
+Tarayıcı Önbelleği (Caching): Tarayıcılar CSS ve JS dosyalarını önbelleğe alır; böylece site çok daha hızlı yüklenir.
+
+Gerçek Dünya Standartı: Sektörde ve büyük yazılım projelerinde %100 bu yöntem kullanılır.
+
+Eksileri:
+
+Tarayıcıda doğrudan açarken bazen dosya yolu (CORS politikası vb. nedenlerle) yerel sunucu (Live Server gibi) istemcileri gerektirebilir.
+
+Hangi Yolu Seçmelisin?
+Şu an için: Berber randou sistemi gibi tek sayfalık, hızlıca test etmek istediğin projelerde tek dosya (inline) şeklinde bırakabilirsin. Uğraşması çok pratiktir.
+
+İleride (Portfolyona ekleyeceksen veya geliştireceksen): Kesinlikle ayrı dosyalara (style.css ve script.js) bölmeni tavsiye ederim. HTML içine de şu şekilde bağlayabilirsin:
