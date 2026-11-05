@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elit Berber | Randevu Sistemi Arayüzü</title>
+    <!-- Google Fonts (Modern ve Okunaklı Poppins Yazı Tipi) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Sayfaya Özel Harici CSS Dosyası -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== GELENEKSEL BERBER ŞERİDİ ==================== -->
+    <div class="barber-strip"></div>
+
+    <!-- ==================== ÜST BİLGİ ÇUBUĞU (TOP BAR) ==================== -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-contact">
+                <span>📍 Kadıköy / İstanbul</span>
+                <span>📞 0 (216) 555 0123</span>
+                <span>⏰ Pzt - Cmt: 09:00 - 20:00 (Pazar Kapalı)</span>
+            </div>
+            <div class="top-notice">
+                <span>💈 Web Tasarımı Dersi Arayüz Ödevi</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== BAŞLIK VE MENÜ (HEADER / NAVBAR) ==================== -->
+    <header class="header">
+        <div class="container nav-wrapper">
+            <!-- Logo ve Marka İsmi -->
+            <a href="#hero" class="brand">
+                <img src="images/logo.png" alt="Berber Logosu" class="brand-logo">
+                <div class="brand-info">
+                    <span class="brand-name">ELİT BERBER</span>
+                    <span class="brand-tag">GELENEKSEL & MODERN SAÇ TASARIMI</span>
+                </div>
+            </a>
+
+            <!-- Mobil Menü Aç/Kapat Butonu -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigasyon Linkleri -->
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-item active">Ana Sayfa</a>
+                <a href="#hizmetler" class="nav-item">Hizmetlerimiz</a>
+                <a href="#ustalar" class="nav-item">Ustalarımız</a>
+                <a href="#randevu" class="nav-item">Randevu Al</a>
+                <a href="#randevularim" class="nav-item">Randevularım</a>
+                <a href="#iletisim" class="nav-item">İletişim</a>
+                <a href="#randevu" class="btn btn-primary btn-sm">Randevu Oluştur</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HERO BÖLÜMÜ (KARŞILAMA) ==================== -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge">Geleneksel Ustalık, Modern Çizgiler</span>
+                    <h1 class="hero-heading">
+                        Sıra Beklemeden, <span class="text-blue">Ustanızdan</span> <span class="text-red">Randevunuzu Alın</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Beyaz zemin üzerine klasik kırmızı-mavi berber çizgileriyle tasarlanmış, kullanıcı dostu online berber randevu alma arayüzü.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#randevu" class="btn btn-primary btn-lg">Hemen Randevu Al</a>
+                        <a href="#hizmetler" class="btn btn-outline btn-lg">Hizmetleri İncele</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-pill">
+                            <span class="stat-icon blue">✓</span>
+                            <span><strong>15+ Yıl</strong> Deneyim</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-icon red">★</span>
+                            <span><strong>%100</strong> Hijyen</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-icon blue">⚡</span>
+                            <span><strong>Hızlı</strong> Randevu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Sağ Görsel Kartı -->
+                <div class="hero-card-wrap">
+                    <div class="hero-card">
+                        <div class="hero-card-strip"></div>
+                        <div class="card-logo-circle">
+                            <img src="images/logo.png" alt="Berber Logosu" class="card-logo">
+                        </div>
+                        <h3>Kişiye Özel Randevulu Hizmet</h3>
+                        <p>Zaman kaybetmeyin, size uygun olan saat aralığını belirleyin ve yerinizi ayırtın.</p>
+                        <div class="quick-stats-row">
+                            <div class="stat-cell">
+                                <span class="num text-blue">4</span>
+                                <span class="lbl">Usta Berber</span>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="num text-blue">6</span>
+                                <span class="lbl">Özel Hizmet</span>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="num text-red">30dk</span>
+                                <span class="lbl">Ortalama Seans</span>
+                            </div>
+                        </div>
+                        <a href="#randevu" class="btn btn-red btn-block">Randevu Formuna Git</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== HİZMETLERİMİZ BÖLÜMÜ ==================== -->
+        <section id="hizmetler" class="section bg-light">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Kişisel Bakım</span>
+                    <h2 class="section-heading">Hizmetlerimiz ve Fiyat Listesi</h2>
+                    <div class="title-strip"></div>
+                    <p class="section-subtext">Profesyonel berber ekibimiz tarafından sunulan başlıca hizmetler:</p>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Kart 1 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">✂️</div>
+                        <div class="service-text">
+                            <div class="service-title-row">
+                                <h3>Saç Kesimi & Yıkama</h3>
+                                <span class="price">₺250</span>
+                            </div>
+                            <p>Yüz hatlarınıza uygun kesim, ferahlatıcı saç yıkama ve fön şekillendirme.</p>
+                            <div class="service-footer">
+                                <span>⏱ 30 Dakika</span>
+                                <button type="button" class="btn-select-hizmet" data-service-name="Saç Kesimi">Seç +</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kart 2 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">🪒</div>
+                        <div class="service-text">
+                            <div class="service-title-row">
+                                <h3>Geleneksel Sakal Tıraşı</h3>
+                                <span class="price">₺150</span>
+                            </div>
+                            <p>Sıcak havlu kompresi, klasik ustura tıraşı ve yatıştırıcı sakal yağı masajı.</p>
+                            <div class="service-footer">
+                                <span>⏱ 20 Dakika</span>
+                                <button type="button" class="btn-select-hizmet" data-service-name="Sakal Tıraşı">Seç +</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kart 3 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">✨</div>
+                        <div class="service-text">
+                            <div class="service-title-row">
+                                <h3>Cilt Bakımı & Maske</h3>
+                                <span class="price">₺200</span>
+                            </div>
+                            <p>Ozon buharı ile gözenek açma, siyah nokta temizliği ve doğal kil maskesi.</p>
+                            <div class="service-footer">
+                                <span>⏱ 30 Dakika</span>
+                                <button type="button" class="btn-select-hizmet" data-service-name="Cilt Bakımı">Seç +</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kart 4 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">💈</div>
+                        <div class="service-text">
+                            <div class="service-title-row">
+                                <h3>Saç & Sakal Kombo</h3>
+                                <span class="price">₺350</span>
+                            </div>
+                            <p>Komple bakım paketi: Saç kesimi, ustura sakal tıraşı, yıkama ve ağda.</p>
+                            <div class="service-footer">
+                                <span>⏱ 45 Dakika</span>
+                                <button type="button" class="btn-select-hizmet" data-service-name="Saç & Sakal Kombo">Seç +</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kart 5 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">🧴</div>
+                        <div class="service-text">
+                            <div class="service-title-row">
+                                <h3>Yıkama & Fön Tasarım</h3>
+                                <span class="price">₺120</span>
+                            </div>
+                            <p>Canlandırıcı şampuan, saç kremi, özel fön ve mat pomad şekillendirme.</p>
+                            <div class="service-footer">
+                                <span>⏱ 15 Dakika</span>
+                                <button type="button" class="btn-select-hizmet" data-service-name="Yıkama & Fön">Seç +</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kart 6 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">🎨</div>
+                        <div class="service-text">
+                            <div class="service-title-row">
+                                <h3>Beyaz Kapatma & Boyama</h3>
+                                <span class="price">₺300</span>
+                            </div>
+                            <p>Doğal tonlarda amonyaksız saç ve sakal renklendirme uygulaması.</p>
+                            <div class="service-footer">
+                                <span>⏱ 40 Dakika</span>
+                                <button type="button" class="btn-select-hizmet" data-service-name="Saç Boyama">Seç +</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== USTALARIMIZ BÖLÜMÜ ==================== -->
+        <section id="ustalar" class="section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Deneyimli Kadro</span>
+                    <h2 class="section-heading">Uzman Berberlerimiz</h2>
+                    <div class="title-strip"></div>
+                    <p class="section-subtext">Alanında tecrübeli ustalarımızdan dilediğinizi seçebilirsiniz.</p>
+                </div>
+
+                <div class="barbers-grid">
+                    <!-- Usta 1 -->
+                    <div class="barber-box">
+                        <div class="barber-avatar blue-grad">CU</div>
+                        <h3>Can Usta</h3>
+                        <span class="role text-blue">Baş Berber & Fade Uzmanı</span>
+                        <p>14 yıllık deneyimi ile modern saç modellerinde öncüdür.</p>
+                        <button type="button" class="btn-pick-barber" data-barber-name="Can Usta">Bu Ustadan Randevu Al</button>
+                    </div>
+
+                    <!-- Usta 2 -->
+                    <div class="barber-box">
+                        <div class="barber-avatar red-grad">AY</div>
+                        <h3>Ahmet Usta</h3>
+                        <span class="role text-red">Ustura & Sakal Ustası</span>
+                        <p>Klasik sıcak havlu sakal tıraşında geleneksel ustalığa sahiptir.</p>
+                        <button type="button" class="btn-pick-barber" data-barber-name="Ahmet Usta">Bu Ustadan Randevu Al</button>
+                    </div>
+
+                    <!-- Usta 3 -->
+                    <div class="barber-box">
+                        <div class="barber-avatar blue-grad">EK</div>
+                        <h3>Emre Usta</h3>
+                        <span class="role text-blue">Modern Kesim & Renklendirme</span>
+                        <p>Genç tarz trend kesimler ve saç şekillendirme uzmanıdır.</p>
+                        <button type="button" class="btn-pick-barber" data-barber-name="Emre Usta">Bu Ustadan Randevu Al</button>
+                    </div>
+
+                    <!-- Usta 4 -->
+                    <div class="barber-box">
+                        <div class="barber-avatar red-grad">BK</div>
+                        <h3>Burak Usta</h3>
+                        <span class="role text-red">Cilt Bakımı & Terapi</span>
+                        <p>Özel buhar bakımı ve canlandırıcı cilt kürlerinde uzmandır.</p>
+                        <button type="button" class="btn-pick-barber" data-barber-name="Burak Usta">Bu Ustadan Randevu Al</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== RANDEVU ALMA FORMU (ÖDEVİN ANA ARAYÜZÜ) ==================== -->
+        <section id="randevu" class="section bg-light">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Rezervasyon Paneli</span>
+                    <h2 class="section-heading">Online Randevu Formu</h2>
+                    <div class="title-strip"></div>
+                    <p class="section-subtext">Lütfen randevu bilgilerinizi seçip form üzerinden onaylayınız.</p>
+                </div>
+
+                <div class="form-wrapper">
+                    <div class="form-card">
+                        <!-- Form Kart Başlığı -->
+                        <div class="form-card-header">
+                            <div class="header-logo-badge">
+                                <img src="images/logo.png" alt="Logo" class="badge-img">
+                            </div>
+                            <h3>Randevu Bilgileri</h3>
+                            <p>Tüm alanları arayüz üzerinden kolayca doldurabilirsiniz.</p>
+                            <div class="barber-strip-thin"></div>
+                        </div>
+
+                        <!-- Form İçeriği -->
+                        <form id="appointmentUiForm" class="ui-form">
+                            <!-- 1. Satır: Ad Soyad & Telefon -->
+                            <div class="form-grid-2">
+                                <div class="field-group">
+                                    <label for="adSoyad">Ad Soyad <span class="req">*</span></label>
+                                    <div class="input-container">
+                                        <span class="field-icon">👤</span>
+                                        <input type="text" id="adSoyad" placeholder="Örn: Ahmet Yılmaz" required>
+                                    </div>
+                                </div>
+                                <div class="field-group">
+                                    <label for="telefon">Telefon Numarası <span class="req">*</span></label>
+                                    <div class="input-container">
+                                        <span class="field-icon">📞</span>
+                                        <input type="tel" id="telefon" placeholder="05XX XXX XX XX" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2. Personel Seçimi -->
+                            <div class="field-group">
+                                <label for="personelSecim">Personel Seçimi <span class="req">*</span></label>
+                                <div class="input-container">
+                                    <span class="field-icon">💈</span>
+                                    <select id="personelSecim" required>
+                                        <option value="" disabled selected>Lütfen bir berber seçiniz...</option>
+                                        <option value="Can Usta">Can Usta - Baş Berber & Saç Stilisti</option>
+                                        <option value="Ahmet Usta">Ahmet Usta - Geleneksel Ustura & Sakal</option>
+                                        <option value="Emre Usta">Emre Usta - Modern Fade & Renklendirme</option>
+                                        <option value="Burak Usta">Burak Usta - Cilt Bakımı & Terapi</option>
+                                        <option value="Fark Etmez">Fark Etmez - İlk Müsait Usta</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- 3. Hizmetler (Tıklanabilir Çoklu Seçim Kartları) -->
+                            <div class="field-group">
+                                <label>Hizmetler <span class="req">*</span> <small class="text-muted">(İstediğiniz hizmetlere tıklayarak seçiniz)</small></label>
+                                <div class="services-select-grid" id="servicesSelectGrid">
+                                    <div class="select-chip selected" data-name="Saç Kesimi" data-price="250">
+                                        <span class="chip-emoji">✂️</span>
+                                        <span class="chip-name">Saç Kesimi</span>
+                                        <span class="chip-price">₺250</span>
+                                        <span class="chip-check">✓</span>
+                                    </div>
+                                    <div class="select-chip" data-name="Sakal Tıraşı" data-price="150">
+                                        <span class="chip-emoji">🪒</span>
+                                        <span class="chip-name">Sakal Tıraşı</span>
+                                        <span class="chip-price">₺150</span>
+                                        <span class="chip-check">✓</span>
+                                    </div>
+                                    <div class="select-chip selected" data-name="Cilt Bakımı" data-price="200">
+                                        <span class="chip-emoji">✨</span>
+                                        <span class="chip-name">Cilt Bakımı</span>
+                                        <span class="chip-price">₺200</span>
+                                        <span class="chip-check">✓</span>
+                                    </div>
+                                    <div class="select-chip" data-name="Saç & Sakal Kombo" data-price="350">
+                                        <span class="chip-emoji">💈</span>
+                                        <span class="chip-name">Saç & Sakal Kombo</span>
+                                        <span class="chip-price">₺350</span>
+                                        <span class="chip-check">✓</span>
+                                    </div>
+                                    <div class="select-chip" data-name="Yıkama & Fön" data-price="120">
+                                        <span class="chip-emoji">🧴</span>
+                                        <span class="chip-name">Yıkama & Fön</span>
+                                        <span class="chip-price">₺120</span>
+                                        <span class="chip-check">✓</span>
+                                    </div>
+                                    <div class="select-chip" data-name="Saç Boyama" data-price="300">
+                                        <span class="chip-emoji">🎨</span>
+                                        <span class="chip-name">Saç Boyama</span>
+                                        <span class="chip-price">₺300</span>
+                                        <span class="chip-check">✓</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4. Tarih ve Saat Seçimi -->
+                            <div class="form-grid-2">
+                                <div class="field-group">
+                                    <label for="randevuTarih">Randevu Tarihi <span class="req">*</span></label>
+                                    <div class="input-container">
+                                        <span class="field-icon">📅</span>
+                                        <input type="date" id="randevuTarih" required>
+                                    </div>
+                                </div>
+
+                                <div class="field-group">
+                                    <label>Saat Seçimi <span class="req">*</span></label>
+                                    <div class="time-chips-grid" id="timeChipsGrid">
+                                        <button type="button" class="time-chip">09:00</button>
+                                        <button type="button" class="time-chip">10:00</button>
+                                        <button type="button" class="time-chip">11:00</button>
+                                        <button type="button" class="time-chip selected">14:00</button>
+                                        <button type="button" class="time-chip">15:30</button>
+                                        <button type="button" class="time-chip">17:00</button>
+                                        <button type="button" class="time-chip">18:30</button>
+                                        <button type="button" class="time-chip">19:30</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Canlı Özet Kutusu -->
+                            <div class="summary-card">
+                                <div class="summary-line">
+                                    <span>Seçilen Usta:</span>
+                                    <strong id="ozetUsta">Can Usta</strong>
+                                </div>
+                                <div class="summary-line">
+                                    <span>Seçilen Hizmetler:</span>
+                                    <strong id="ozetHizmetler">Saç Kesimi, Cilt Bakımı</strong>
+                                </div>
+                                <div class="summary-line total-line">
+                                    <span>Toplam Tutar:</span>
+                                    <strong class="total-price" id="ozetTutar">₺450</strong>
+                                </div>
+                            </div>
+
+                            <!-- Randevuyu Onayla Butonu -->
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                                Randevuyu Onayla
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== OLUŞTURULAN RANDEVULAR BÖLÜMÜ ==================== -->
+        <section id="randevularim" class="section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Rezervasyon Listesi</span>
+                    <h2 class="section-heading">Oluşturulan Randevular</h2>
+                    <div class="title-strip"></div>
+                    <p class="section-subtext">Alınan randevuların listelendiği arayüz paneli:</p>
+                </div>
+
+                <div class="list-wrapper">
+                    <!-- Arama Çubuğu -->
+                    <div class="search-bar">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="aramaInput" placeholder="Kayıtlı randevularda ara...">
+                        <span class="count-pill">Toplam 2 Randevu</span>
+                    </div>
+
+                    <!-- Randevu Kartları -->
+                    <div class="appointments-list" id="appointmentsList">
+                        <!-- Randevu 1 (Mockup'taki gibi) -->
+                        <div class="appt-card">
+                            <div class="appt-left">
+                                <div class="appt-header-row">
+                                    <span class="appt-name">1. Ahmet Yılmaz</span>
+                                    <span class="barber-badge">💈 Can Usta</span>
+                                </div>
+                                <div class="appt-details">
+                                    <span>📅 06.11.2026</span>
+                                    <span>⏰ 14:00</span>
+                                    <span>📞 0532 111 22 33</span>
+                                    <span class="price-tag">₺450</span>
+                                </div>
+                                <div class="appt-services">
+                                    <strong>Hizmetler:</strong> Saç Kesimi, Cilt Bakımı
+                                </div>
+                            </div>
+                            <div class="appt-right">
+                                <button type="button" class="btn-cancel" onclick="silRandevu(this)">İptal Et</button>
+                            </div>
+                        </div>
+
+                        <!-- Randevu 2 (Mockup'taki gibi) -->
+                        <div class="appt-card">
+                            <div class="appt-left">
+                                <div class="appt-header-row">
+                                    <span class="appt-name">2. Mehmet Kaya</span>
+                                    <span class="barber-badge">💈 Emre Usta</span>
+                                </div>
+                                <div class="appt-details">
+                                    <span>📅 07.11.2026</span>
+                                    <span>⏰ 11:00</span>
+                                    <span>📞 0544 222 33 44</span>
+                                    <span class="price-tag">₺400</span>
+                                </div>
+                                <div class="appt-services">
+                                    <strong>Hizmetler:</strong> Saç Kesimi, Sakal Tıraşı
+                                </div>
+                            </div>
+                            <div class="appt-right">
+                                <button type="button" class="btn-cancel" onclick="silRandevu(this)">İptal Et</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== İLETİŞİM BÖLÜMÜ ==================== -->
+        <section id="iletisim" class="section bg-light">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Ulaşım ve Konum</span>
+                    <h2 class="section-heading">İletişim & Çalışma Saatleri</h2>
+                    <div class="title-strip"></div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-box">
+                        <div class="contact-item">
+                            <span class="icon blue">📍</span>
+                            <div>
+                                <h4>Adres</h4>
+                                <p>Moda Caddesi No: 42/B, Kadıköy / İstanbul</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon red">📞</span>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>0 (216) 555 0123 / 0 (532) 555 0123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon blue">⏰</span>
+                            <div>
+                                <h4>Çalışma Saatleri</h4>
+                                <p>Pazartesi - Cumartesi: 09:00 - 20:00 (Pazar Kapalı)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="message-box">
+                        <h3>Hızlı Mesaj Bırakın</h3>
+                        <form id="contactUiForm">
+                            <div class="field-group">
+                                <input type="text" placeholder="Adınız Soyadınız" required>
+                            </div>
+                            <div class="field-group">
+                                <input type="email" placeholder="E-Posta Adresiniz" required>
+                            </div>
+                            <div class="field-group">
+                                <textarea rows="3" placeholder="Mesajınız..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Mesajı Gönder</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER (ALT BİLGİ) ==================== -->
+    <footer class="footer">
+        <div class="barber-strip"></div>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo-wrap">
+                    <img src="images/logo.png" alt="Elit Berber" class="footer-logo">
+                    <span class="footer-title">ELİT BERBER</span>
+                </div>
+                <p>Geleneksel berber sanatını modern arayüz estetiği ile buluşturan web tasarımı ödevi projesi.</p>
+            </div>
+            <div class="footer-info">
+                <h4>Hızlı Bağlantılar</h4>
+                <a href="#hero">Ana Sayfa</a>
+                <a href="#hizmetler">Hizmetlerimiz</a>
+                <a href="#ustalar">Ustalarımız</a>
+                <a href="#randevu">Randevu Al</a>
+            </div>
+            <div class="footer-hours">
+                <h4>Çalışma Saatleri</h4>
+                <p>Pzt - Cmt: 09:00 - 20:00</p>
+                <p class="text-red">Pazar: Kapalı</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Elit Berber Salonu - Web Tasarımı Dersi Arayüz Ödevi (HTML, CSS, JS)</p>
+        </div>
+    </footer>
+
+    <!-- ==================== BAŞARI MODALI (POPUP ARAYÜZÜ) ==================== -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-card">
+            <div class="modal-badge-check">✓</div>
+            <h3>Randevunuz Başarıyla Oluşturuldu!</h3>
+            <p class="modal-subtext">Bilgileriniz arayüze başarıyla kaydedildi.</p>
+            
+            <div class="modal-receipt">
+                <div class="receipt-item">
+                    <span>Müşteri:</span>
+                    <strong id="modalName">Ahmet Yılmaz</strong>
+                </div>
+                <div class="receipt-item">
+                    <span>Seçilen Usta:</span>
+                    <strong id="modalBarber">Can Usta</strong>
+                </div>
+                <div class="receipt-item">
+                    <span>Randevu Saati:</span>
+                    <strong id="modalTime" class="badge-time">14:00</strong>
+                </div>
+                <div class="receipt-item">
+                    <span>Hizmetler:</span>
+                    <strong id="modalServices">Saç Kesimi, Cilt Bakımı</strong>
+                </div>
+                <div class="receipt-item total">
+                    <span>Toplam Tutar:</span>
+                    <strong id="modalTotal" class="text-red">₺450</strong>
+                </div>
+            </div>
+
+            <div class="modal-buttons">
+                <button type="button" class="btn btn-primary btn-block" id="modalCloseBtn">
+                    Yeni Randevu Al
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Harici Arayüz JavaScript Dosyası -->
+    <script src="script.js"></script>
+</body>
+</html>
